@@ -1,0 +1,101 @@
+2013-11-27 12:14:27
+use tower
+Unknown database 'tower'
+2013-11-27 12:14:27
+use tower
+Unknown database 'tower'
+2013-11-27 12:15:15
+use tower
+Unknown database 'tower'
+2013-11-27 12:15:15
+use tower
+Unknown database 'tower'
+2013-11-27 12:15:34
+use tower
+Unknown database 'tower'
+2013-11-27 12:15:34
+use tower
+Unknown database 'tower'
+2013-11-27 12:15:40
+use tower
+Unknown database 'tower'
+2013-11-27 12:15:40
+use tower
+Unknown database 'tower'
+2013-11-27 12:15:40
+use tower
+Unknown database 'tower'
+2013-11-27 12:15:40
+use tower
+Unknown database 'tower'
+2013-11-27 12:15:40
+select count(*) from users where email = 'maohhgg@gmail.com'
+No database selected
+2013-11-27 12:15:45
+use tower
+Unknown database 'tower'
+2013-11-27 12:15:45
+use tower
+Unknown database 'tower'
+2013-11-27 13:25:02
+SELECT name,mark,color,url FROM project WHERE parent='maohhgg@gmail.com'
+Unknown column 'color' in 'field list'
+2013-11-27 13:25:37
+SELECT name,mark,color,url FROM project WHERE parent='maohhgg@gmail.com'
+Unknown column 'color' in 'field list'
+2013-11-27 13:25:38
+SELECT name,mark,color,url FROM project WHERE parent='maohhgg@gmail.com'
+Unknown column 'color' in 'field list'
+2013-11-27 13:25:54
+SELECT name,mark,color,url FROM project WHERE parent='maohhgg@gmail.com'
+Unknown column 'color' in 'field list'
+2013-11-27 13:26:43
+SELECT name,mark,color,url FROM project WHERE parent='maohhgg@gmail.com'
+Unknown column 'color' in 'field list'
+2013-11-27 13:26:46
+SELECT name,mark,color,url FROM project WHERE parent='maohhgg@gmail.com'
+Unknown column 'color' in 'field list'
+2013-11-27 13:26:59
+insert into project (id,name,parent,mark,color,mktime,url) values (NULL,'DEMO','maohhgg@gmail.com','E','E3E3E3','1385530019','rbyd81385530019')
+Unknown column 'color' in 'field list'
+2013-11-27 13:27:08
+insert into project (id,name,parent,mark,color,mktime,url) values (NULL,'DEMO','maohhgg@gmail.com','E','E3E3E3','1385530028','ql63z1385530028')
+Unknown column 'color' in 'field list'
+2013-11-27 13:27:17
+SELECT name,mark,color,url FROM project WHERE parent='maohhgg@gmail.com'
+Unknown column 'color' in 'field list'
+2013-11-27 13:27:18
+SELECT name,mark,color,url FROM project WHERE parent='maohhgg@gmail.com'
+Unknown column 'color' in 'field list'
+2013-11-27 13:27:43
+insert into project (id,name,parent,mark,color,mktime,url) values (NULL,'DEMO','maohhgg@gmail.com','E','E3E3E3','1385530063','vg70b1385530063')
+Unknown column 'color' in 'field list'
+2013-11-27 13:30:04
+insert into project (id,name,parent,mark,color,mktime,url) values (NULL,'DEMO','maohhgg@gmail.com','E','E3E3E3','1385530204','8kcm01385530204')
+Unknown column 'color' in 'field list'
+2013-11-27 13:33:56
+SELECT name,ctime,content FROM proword WHERE parent='8iyxq1385530405'
+Unknown column 'ctime' in 'field list'
+2013-11-27 13:34:05
+SELECT name,ctime,content FROM proword WHERE parent='8iyxq1385530405'
+Unknown column 'ctime' in 'field list'
+2013-11-27 13:34:58
+SELECT name,ctime,content FROM proword WHERE parent='8iyxq1385530405'
+Unknown column 'ctime' in 'field list'
+2013-11-27 13:35:13
+SELECT name,ctime,content FROM proword WHERE parent='8iyxq1385530405'
+Unknown column 'ctime' in 'field list'
+2013-11-27 13:35:16
+SELECT name,ctime,content FROM proword WHERE parent='8iyxq1385530405'
+Unknown column 'ctime' in 'field list'
+2013-11-27 13:35:34
+insert into proword (id,name,ctime,parent,content) values (NULL,'DEMO','1385530534','8iyxq1385530405','&lt;div style=&quot;text-align:center;&quot;&gt;
+	&lt;strong&gt;DEMO&lt;/strong&gt;
+&lt;/div&gt;')
+Unknown column 'ctime' in 'field list'
+2013-11-27 14:50:03
+SELECT url FROM profile WHERE parent='8iyxq1385530405' ORDER BY id dsec limit 1
+You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'dsec limit 1' at line 1
+2013-11-27 14:50:39
+SELECT url FROM profile WHERE parent='8iyxq1385530405' ORDER BY id dsec limit 1
+You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'dsec limit 1' at line 1

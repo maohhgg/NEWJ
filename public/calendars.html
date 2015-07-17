@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8" />
+	<title><?php echo $date; ?></title>
+	<link href="public/style/style.css" rel="stylesheet"/>
+	<link href="public/style/calendars.css" rel="stylesheet"/>
+	<script type="text/javascript" src='public/script/jquery.min.js'></script>
+	<script type="text/javascript" src='public/script/acssc.js'></script>
+	<script type="text/javascript" src='public/script/calendars.js'></script>
+</head>
+<body>
+	<div id="range">
+		<div id="rangebox">
+			<div id="mark"></div>
+			<div id="ranclose" onclick="closewindow()" /></div>
+			<div class="ranline">
+				<span>主题:</span><input type="text" id="sub"/>
+			</div>
+			<div class="ranline">
+				<span>日期:</span><a id="rantime"></a>
+			</div>
+			<div class="ranline">
+				<span>内容:</span><textarea maxlength="140"></textarea>
+			</div>
+			<input type="button" value="添加" id="creatsan"/>
+			<a id="mess"></a>
+		</div>
+	</div>
+	<div id='body'>
+
+		<div id='header'>
+			<ul>
+				<li class='first'><img src='public/images/logo.png' /></li>
+				<li><a id="vist" href="index.php">项目</a></li>
+				<li><a href="progress.php">回顾</a></li>
+				<li><a href="calendars.php">日历</a></li>
+				<li><a href="stats.php">统计</a></li>
+			</ul>
+			<div id='user'>
+				<a href="me.php" title="<?php echo $_COOKIE['towerId']; ?>"><img src="<?php echo $user['headimg'] ?>" /></a>
+			</div>
+			<div class="search">
+				<span></span>
+				<input id='sea' type='text'/>
+			</div>
+		</div>
+
+		<div id="sonpage">
+			<div id='title'>
+				<div id="showdata">
+					<a href="calendars.php?<?php echo $lyear."&".$lmouth; ?>"><input type="button" value="LAST" id="last" /></a>
+					<h3 <?php echo "year={$year} mouth={$mouth}"?>><?php echo "{$year}年 {$mouth}月";?></h3>
+					<a href="calendars.php?<?php echo $nyear."&".$nmouth; ?>"><input type="button" value="NEXT" id="next"  /></a>
+				</div>
+				<ul>
+					<li>周一</li>
+					<li>周二</li>
+					<li>周三</li>
+					<li>周四</li>
+					<li>周五</li>
+					<li class='red'>周六</li>
+					<li class='red'>周日</li>
+				</ul>
+			</div>
+			<div id='datenum'>
+				<?php
+					for($i=1;$i<=42;$i++){
+
+						if($i == $today){
+							echo "<div id='today'><p>".date("d",$date[$i-1])."</p>";
+							if (isset($array) && $array[$date[$i-1]] != null) {
+								echo showarray($array[$date[$i-1]]);
+							}
+							echo "<p>今天</p></div>";
+							continue;
+						}
+
+						if($i%7==0){
+
+							if(date("m",$date[$i-1]) != $mouth){
+								echo "<div class='liost other'><p>".date("d",$date[$i-1])."</p></div>";
+								continue;
+							}
+
+							if($i == $today){
+								echo "<div id='today'><p>".date("d",$date[$i-1])."</p>";
+								echo showarray($array[$date[$i-1]]);
+								echo "</div>";
+								continue;
+							}
+
+							echo "<div class='liost'><p>".date("d",$date[$i-1])."</p>";
+							if (isset($array) && $array[$date[$i-1]]) {
+								echo showarray($array[$date[$i-1]]);
+							}
+							echo "</div>";
+							continue;
+
+						}else if(date("m",$date[$i-1]) != $mouth){
+							echo "<div class='other'><p>".date("d",$date[$i-1])."</p></div>";
+							continue;
+						}
+
+						echo "<div><p>".date("d",$date[$i-1])."</p>";
+						if (isset($array) && $array[$date[$i-1]]) {
+							echo showarray($array[$date[$i-1]]);
+						}
+						echo "</div>";
+					}
+					
+				?>
+			</div>
+		</div>
+
+	</div>
+</body>
+</html>

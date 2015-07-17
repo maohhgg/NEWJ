@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8" />
+	<title><?php echo $user['name'] ?></title>
+	<link href="public/style/style.css" rel="stylesheet"/>
+	<link href="public/style/tasks.css" rel="stylesheet"/>
+	<script type="text/javascript" src='public/script/jquery.min.js'></script>
+	<script type="text/javascript" src='public/script/acssc.js'></script>
+	<script type="text/javascript" src='public/script/tasks.js'></script>
+
+</head>
+<body>
+	<div id='body'>
+
+		<div id='header'>
+			<ul>
+				<li class='first'><img src='public/images/logo.png' /></li>
+				<li><a id="vist" href="index.php">项目</a></li>
+				<li><a href="progress.php">回顾</a></li>
+				<li><a href="calendars.php">日历</a></li>
+				<li><a href="stats.php">统计</a></li>
+			</ul>
+			<div id='user'>
+				<a href="me.php"><img src="<?php echo $user['headimg'] ?>" title="<?php echo $user['name'] ?>" /></a>
+			</div>
+			<div class="search">
+				<span></span>
+				<input id='sea' type='text'/>
+			</div>
+		</div>
+		<div id="tasktitle">
+			<h3>项目模板</h3>
+		</div>
+		<div id="sonpage">
+			<div id="stitle">
+				<h3><?php echo $info['name']; ?></h3><input type="button" value="设置" onclick="setask()" /> <a>删除</a>
+				<div id="setask">
+					<span>任务截止时间</span><input type="text" class="one" />
+					<input type="button" class="sub" value="保存" /> <a onclick="setask()">取消</a>
+				</div>
+			</div>
+			<div id="sbottom">
+			<?php
+				if($view){
+					foreach ($view as $value) {
+						echo "<div class='oneline'>
+							<img src='{$user['headimg']}'/>
+							<p>".date("Y/m/d H:i:s",$value['starttime'])."</p>
+							<span>{$value['content']}</span>
+						</div>";
+					}
+				}
+			?>
+				<div id="comment">
+					<img src="<?php echo $user['headimg'] ?>">
+					<div id="upword">
+						<textarea title="144个字符内" maxlength="144">144个字符内</textarea>
+						<input type="button" value="报告" onclick="createview()" />
+						<a id="mess"></a>
+					</div>
+				</div>
+				<div id="history">
+					<h3>任务历史</h3>
+					<?php
+						if(isset($view['0'])){
+							echo "<div class='hline'>".date("Y/m/d H:i:s",$view['0']['starttime'])."开始了任务</div>";
+						}
+						echo  "<div class='hline'>".date("Y/m/d H:i:s",$info['starttime'])."创建了任务</div>";
+					?>
+				</div>
+			</div>
+		</div>	
+
+	</div>
+</body>
+</html>

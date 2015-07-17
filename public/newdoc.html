@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8" />
+	<title><?php echo $user['name'] ?></title>
+	<link href="public/style/style.css" rel="stylesheet"/>
+	<link href="public/style/newdoc.css" rel="stylesheet"/>
+	<script type="text/javascript" src='public/script/jquery.min.js'></script>
+	<script type="text/javascript" src='public/script/acssc.js'></script>
+	<script type="text/javascript" src='public/script/newdoc.js'></script>
+
+	<script charset="utf-8" src="public/editor/kindeditor-min.js"></script>
+	<script charset="utf-8" src="public/editor/lang/zh_CN.js"></script>
+	<script>
+        KindEditor.ready(function(K) {
+            window.editor = K.create('#editor',{
+            	pasteType : 0,
+            	resizeType : 1,
+            	themeType : 'simple',
+				allowPreviewEmoticons : false,
+				allowImageUpload : false,
+				items : [
+					'fontsize','bold', 'italic', 'underline',
+					'removeformat', 'justifyleft', 'justifycenter', 'justifyright', 'insertorderedlist',
+					'insertunorderedlist', 'link'],
+				afterBlur: function(){this.sync();}
+            });
+        });
+</script>
+</head>
+<body>
+	<div id='body'>
+
+		<div id='header'>
+			<ul>
+				<li class='first'><img src='public/images/logo.png' /></li>
+				<li><a id="vist" href="index.php">项目</a></li>
+				<li><a href="progress.php">回顾</a></li>
+				<li><a href="calendars.php">日历</a></li>
+				<li><a href="stats.php">统计</a></li>
+			</ul>
+			<div id='user'>
+				<a href="me.php"><img src="<?php echo $user['headimg'] ?>" title="<?php echo $user['name'] ?>" /></a>
+			</div>
+			<div class="search">
+				<span></span>
+				<input id='sea' type='text'/>
+			</div>
+		</div>
+		<div id="tasktitle">
+			<h3>项目模板</h3>
+		</div>
+		<div id="sonpage">
+			<input id="doctitle" value="文档标题" title="文档标题" type="text" class="one" />
+			<textarea id="editor"></textarea>
+			<div id="from">
+				<input type="button" value="发布" class="sub" onclick="sendword()" /> 
+				<input type="button" value="取消" class="can" onclick="closewindow()" /><br/>
+				<div id="mess"></div>
+			</div>
+		</div>	
+
+	</div>
+</body>
+</html>

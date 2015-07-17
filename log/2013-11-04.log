@@ -1,0 +1,18 @@
+2013-11-04 09:48:52
+select email from regtmp where codekey=e5rusach3k
+Unknown column 'e5rusach3k' in 'where clause'
+2013-11-04 09:48:52
+insert into users (id,id,headimg,name,password,email,mktime,lastlogin,numpro,proda) values (NULL,'','data/dafault/user.png','','2yYY7UPRF9uL9YSTIBKoa9EoTmHhnwoJMjaV3H3KfRk=','','1383529732','0','0','0')
+Unknown column 'proda' in 'field list'
+2013-11-04 09:50:32
+select email from regtmp where codekey=e5rusach3k
+Unknown column 'e5rusach3k' in 'where clause'
+2013-11-04 09:50:32
+insert into users (id,id,headimg,name,password,email,mktime,lastlogin,numpro,proda) values (NULL,'','data/dafault/user.png','','2yYY7UPRF9uL9YSTIBKoa9EoTmHhnwoJMjaV3H3KfRk=','','1383529832','0','0','0')
+Unknown column 'proda' in 'field list'
+2013-11-04 09:52:48
+insert into users (id,id,headimg,name,password,email,mktime,lastlogin,numpro,proda) values (NULL,'','data/dafault/user.png','','','Array','1383529968','0','0','0')
+Unknown column 'proda' in 'field list'
+2013-11-04 09:53:25
+insert into users (id,headimg,name,password,email,mktime,lastlogin,numpro,proda) values (NULL,'data/dafault/user.png','','','Array','1383530005','0','0','0')
+Unknown column 'proda' in 'field list'

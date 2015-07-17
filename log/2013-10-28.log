@@ -1,0 +1,69 @@
+2013-10-28 08:32:13
+SELECT * FROM users WHERE mail = mao@hto.com
+You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '@hto.com' at line 1
+2013-10-28 09:55:44
+select email,passsword from users where email = 'maohhgg@qq.com' and passwd = '/W2xp1G/58VBYqm2YT6JZovGbvyqaW4/dao2+tu+QaA='
+Unknown column 'passsword' in 'field list'
+2013-10-28 09:55:44
+select email,passsword from users where email = 'maohhgg@qq.com' and passwd = '/W2xp1G/58VBYqm2YT6JZovGbvyqaW4/dao2+tu+QaA='
+Unknown column 'passsword' in 'field list'
+2013-10-28 09:56:39
+select email,password from users where email = 'maohhgg@qq.com' and passwd = '/W2xp1G/58VBYqm2YT6JZovGbvyqaW4/dao2+tu+QaA='
+Unknown column 'passwd' in 'where clause'
+2013-10-28 15:11:32
+insert into regtmp (mktime,codekey) values ('2013-10 28 15:11:32','e1p5du9xc0')
+Data truncated for column 'mktime' at row 1
+2013-10-28 15:11:41
+insert into regtmp (mktime,codekey) values ('2013-10 28 15:11:41','usqzlei1w0')
+Data truncated for column 'mktime' at row 1
+2013-10-28 15:20:28
+insert into regtmp (email,password,mktime,codekey) values ('maohhgg@hotmail.com','','2013-10 28 15:20:28','e3hs8dzu1y')
+Unknown column 'email' in 'field list'
+2013-10-28 15:22:11
+insert into regtmp (email,password,mktime,codekey) values ('maohhgg@hotmail.com','','2013-10 28 15:22:11','bte6dyoj2u')
+Unknown column 'email' in 'field list'
+2013-10-28 15:22:42
+insert into regtmp (email,password,mktime,codekey) values ('maohhgg@hotmail.com','','2013-10 28 15:22:42','f6az0x1nk3')
+Unknown column 'email' in 'field list'
+2013-10-28 15:23:49
+insert into regtmp (email,password,mktime,codekey) values ('maohhgg@hotmail.com','','2013-10 28 15:23:49','tox58rv16m')
+Unknown column 'email' in 'field list'
+2013-10-28 15:43:20
+insert into regtmp (email,mktime,codekey) values ('NULLmaohhgg@hotmail.com','2013-10 28 15:43:20','y6vxjd27g4')
+Unknown column 'email' in 'field list'
+2013-10-28 15:43:46
+insert into regtmp (email,mktime,codekey) values ('NULL,maohhgg@hotmail.com','2013-10 28 15:43:46','2tf3kdv9pj')
+Unknown column 'email' in 'field list'
+2013-10-28 15:45:45
+insert into regtmp () values ('NULL,maohhgg@hotmail.com','2013-10 28 15:45:45','tjzfwkybe6')
+Column count doesn't match value count at row 1
+2013-10-28 15:46:07
+insert into regtmp (id,email,mktime,codekey) values ('NULL,maohhgg@hotmail.com','2013-10 28 15:46:07','xe2z0ui4os')
+Column count doesn't match value count at row 1
+2013-10-28 15:48:42
+insert into regtmp (id,email,mktime,codekey) values ('NULL,maohhgg@hotmail.com','2013-10 28 15:48:42','tkzqyi54ra')
+Column count doesn't match value count at row 1
+2013-10-28 15:49:21
+insert into regtmp (id,email,mktime,codekey) values ('NULL,maohhgg@hotmail.com','2013-10 28 15:49:21','kdox2l46s0')
+Column count doesn't match value count at row 1
+2013-10-28 15:50:00
+insert into regtmp (id,email,mktime,codekey) values ('NULL,maohhgg@hotmail.com','2013-10 28 15:50:00','wn2s3ijmu5')
+Column count doesn't match value count at row 1
+2013-10-28 15:50:06
+insert into regtmp (id,email,mktime,codekey) values ('NULL,maohhgg@hotmail.com','2013-10 28 15:50:06','7m3p1idfv0')
+Column count doesn't match value count at row 1
+2013-10-28 15:50:23
+insert into regtmp (id,email,mktime,codekey) values ('NULL,maohhgg@hotmail.com','2013-10 28 15:50:23','zflxep93hv')
+Column count doesn't match value count at row 1
+2013-10-28 15:50:28
+insert into regtmp (id,email,mktime,codekey) values ('NULL,maohhgg@hotmail.com','2013-10 28 15:50:28','z5q3vogujn')
+Column count doesn't match value count at row 1
+2013-10-28 15:51:56
+insert into regtmp (id,email,mktime,codekey) values ('NULL,maohhgg@hotmail.com','2013-10 28 15:51:56','yr6xf9pbtv')
+Column count doesn't match value count at row 1
+2013-10-28 15:54:34
+insert into regtmp (id,email,mktime,codekey) values ('NULL,maohhgg@hotmail.com','2013-10 28 15:54:34','u71zbync4f')
+Column count doesn't match value count at row 1
+2013-10-28 15:56:03
+insert into regtmp (id,email,mktime,codekey) values (NULL,'maohhgg@hotmail.com','2013-10 28 15:56:03','kbfeayvr2n')
+Data truncated for column 'mktime' at row 1

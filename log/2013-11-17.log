@@ -1,0 +1,234 @@
+2013-11-17 13:21:23
+SELECT name,endtime,newstat FROM profile WHERE parent='ftriu532smqd81n'
+Unknown column 'name' in 'field list'
+2013-11-17 13:21:29
+SELECT name,endtime,newstat FROM profile WHERE parent='ftriu532smqd81n'
+Unknown column 'name' in 'field list'
+2013-11-17 13:21:42
+SELECT name,endtime,newstat FROM profile WHERE parent='q5supc0lytiv4x9'
+Unknown column 'name' in 'field list'
+2013-11-17 13:21:47
+SELECT name,endtime,newstat FROM profile WHERE parent='ftriu532smqd81n'
+Unknown column 'name' in 'field list'
+2013-11-17 13:22:51
+SELECT name,endtime,newstat FROM profile WHERE parent='q5supc0lytiv4x9'
+Unknown column 'name' in 'field list'
+2013-11-17 13:23:07
+SELECT name,endtime,newstat FROM profile WHERE parent='ftriu532smqd81n'
+Unknown column 'name' in 'field list'
+2013-11-17 13:26:46
+SELECT name,endtime,newstat FROM profile WHERE parent='ftriu532smqd81n'
+Unknown column 'name' in 'field list'
+2013-11-17 13:27:07
+SELECT name,endtime,newstat FROM profile WHERE parent='ftriu532smqd81n'
+Unknown column 'name' in 'field list'
+2013-11-17 13:27:09
+SELECT name,endtime,newstat FROM profile WHERE parent='ftriu532smqd81n'
+Unknown column 'name' in 'field list'
+2013-11-17 13:27:16
+SELECT name,endtime,newstat FROM profile WHERE parent='ftriu532smqd81n'
+Unknown column 'name' in 'field list'
+2013-11-17 13:27:24
+SELECT name,endtime,newstat FROM profile WHERE parent='ftriu532smqd81n'
+Unknown column 'name' in 'field list'
+2013-11-17 13:27:27
+SELECT name,endtime,newstat FROM profile WHERE parent='ftriu532smqd81n'
+Unknown column 'name' in 'field list'
+2013-11-17 13:27:55
+SELECT name,endtime,newstat FROM profile WHERE parent='ftriu532smqd81n'
+Unknown column 'name' in 'field list'
+2013-11-17 13:27:56
+SELECT name,endtime,newstat FROM profile WHERE parent='ftriu532smqd81n'
+Unknown column 'name' in 'field list'
+2013-11-17 13:44:19
+SELECT name,endtime,newstat FROM profile WHERE parent='ftriu532smqd81n'
+Unknown column 'name' in 'field list'
+2013-11-17 13:44:45
+SELECT name,endtime,newstat FROM profile WHERE parent='ftriu532smqd81n'
+Unknown column 'name' in 'field list'
+2013-11-17 13:44:46
+SELECT name,endtime,newstat FROM profile WHERE parent='ftriu532smqd81n'
+Unknown column 'name' in 'field list'
+2013-11-17 13:51:09
+SELECT name,endtime,newstat FROM profile WHERE parent='ftriu532smqd81n'
+Unknown column 'name' in 'field list'
+2013-11-17 13:51:14
+SELECT name,endtime,newstat FROM profile WHERE parent='09wg5brkidyljtp'
+Unknown column 'name' in 'field list'
+2013-11-17 13:51:19
+SELECT name,endtime,newstat FROM profile WHERE parent='ftriu532smqd81n'
+Unknown column 'name' in 'field list'
+2013-11-17 13:51:22
+SELECT name,endtime,newstat FROM profile WHERE parent='ftriu532smqd81n'
+Unknown column 'name' in 'field list'
+2013-11-17 13:51:32
+SELECT name,endtime,newstat FROM profile WHERE parent='ftriu532smqd81n'
+Unknown column 'name' in 'field list'
+2013-11-17 13:51:42
+SELECT name,endtime,newstat FROM profile WHERE parent='ftriu532smqd81n'
+Unknown column 'name' in 'field list'
+2013-11-17 13:52:02
+SELECT name,endtime,newstat FROM profile WHERE parent='ftriu532smqd81n'
+Unknown column 'name' in 'field list'
+2013-11-17 13:52:43
+SELECT name,endtime,newstat FROM profile WHERE parent='ftriu532smqd81n'
+Unknown column 'name' in 'field list'
+2013-11-17 13:59:53
+SELECT name,endtime,newstat FROM profile WHERE parent='q5supc0lytiv4x9'
+Unknown column 'name' in 'field list'
+2013-11-17 13:59:56
+SELECT name,endtime,newstat FROM profile WHERE parent='ftriu532smqd81n'
+Unknown column 'name' in 'field list'
+2013-11-17 14:00:12
+SELECT name,endtime,newstat FROM profile WHERE parent='ftriu532smqd81n'
+Unknown column 'name' in 'field list'
+2013-11-17 14:32:24
+UPDATE student set newstat=newstat+1 where id ='1'
+Table 'tower.student' doesn't exist
+2013-11-17 14:32:43
+UPDATE student set newstat=newstat+1 where id ='1'
+Table 'tower.student' doesn't exist
+2013-11-17 14:33:50
+SELECT name,endtime,newstat FROM profile WHERE parent='ftriu532smqd81n'
+Unknown column 'name' in 'field list'
+2013-11-17 14:34:51
+SELECT name,endtime,newstat FROM profile WHERE parent='ftriu532smqd81n'
+Unknown column 'name' in 'field list'
+2013-11-17 14:35:29
+SELECT name,endtime,newstat FROM profile WHERE parent='ftriu532smqd81n'
+Unknown column 'name' in 'field list'
+2013-11-17 14:35:36
+SELECT name,endtime,newstat FROM profile WHERE parent='ftriu532smqd81n'
+Unknown column 'name' in 'field list'
+2013-11-17 14:43:24
+SELECT name,endtime,newstat FROM profile WHERE parent='ftriu532smqd81n'
+Unknown column 'name' in 'field list'
+2013-11-17 14:44:25
+SELECT name,endtime,newstat FROM profile WHERE parent='q5supc0lytiv4x9'
+Unknown column 'name' in 'field list'
+2013-11-17 14:45:26
+SELECT name,endtime,newstat FROM profile WHERE parent='ftriu532smqd81n'
+Unknown column 'name' in 'field list'
+2013-11-17 14:45:32
+SELECT name,endtime,newstat FROM profile WHERE parent='09wg5brkidyljtp'
+Unknown column 'name' in 'field list'
+2013-11-17 14:45:50
+SELECT name,endtime,newstat FROM profile WHERE parent='ftriu532smqd81n'
+Unknown column 'name' in 'field list'
+2013-11-17 14:46:01
+SELECT name,endtime,newstat FROM profile WHERE parent='ftriu532smqd81n'
+Unknown column 'name' in 'field list'
+2013-11-17 14:46:11
+SELECT name,endtime,newstat FROM profile WHERE parent='ftriu532smqd81n'
+Unknown column 'name' in 'field list'
+2013-11-17 14:47:33
+SELECT name,endtime,newstat FROM profile WHERE parent='ftriu532smqd81n'
+Unknown column 'name' in 'field list'
+2013-11-17 14:47:41
+SELECT name,endtime,newstat FROM profile WHERE parent='ftriu532smqd81n'
+Unknown column 'name' in 'field list'
+2013-11-17 14:47:42
+SELECT name,endtime,newstat FROM profile WHERE parent='ftriu532smqd81n'
+Unknown column 'name' in 'field list'
+2013-11-17 14:47:47
+SELECT name,endtime,newstat FROM profile WHERE parent='ftriu532smqd81n'
+Unknown column 'name' in 'field list'
+2013-11-17 14:47:55
+SELECT name,endtime,newstat FROM profile WHERE parent='ftriu532smqd81n'
+Unknown column 'name' in 'field list'
+2013-11-17 14:48:53
+SELECT name,endtime,newstat FROM profile WHERE parent='ftriu532smqd81n'
+Unknown column 'name' in 'field list'
+2013-11-17 14:49:35
+SELECT name,endtime,newstat FROM profile WHERE parent='ftriu532smqd81n'
+Unknown column 'name' in 'field list'
+2013-11-17 14:49:50
+SELECT name,endtime,newstat FROM profile WHERE parent='ftriu532smqd81n'
+Unknown column 'name' in 'field list'
+2013-11-17 14:49:56
+SELECT name,endtime,newstat FROM profile WHERE parent='09wg5brkidyljtp'
+Unknown column 'name' in 'field list'
+2013-11-17 14:50:02
+SELECT name,endtime,newstat FROM profile WHERE parent='q5supc0lytiv4x9'
+Unknown column 'name' in 'field list'
+2013-11-17 14:50:05
+SELECT name,endtime,newstat FROM profile WHERE parent='i639x1384613263'
+Unknown column 'name' in 'field list'
+2013-11-17 14:50:09
+SELECT name,endtime,newstat FROM profile WHERE parent='zpri31384402725'
+Unknown column 'name' in 'field list'
+2013-11-17 14:50:28
+SELECT name,endtime,newstat FROM profile WHERE parent='zpri31384402725'
+Unknown column 'name' in 'field list'
+2013-11-17 14:50:56
+SELECT name,endtime,newstat FROM profile WHERE parent='zpri31384402725'
+Unknown column 'name' in 'field list'
+2013-11-17 14:51:05
+SELECT name,endtime,newstat FROM profile WHERE parent='zpri31384402725'
+Unknown column 'name' in 'field list'
+2013-11-17 14:51:32
+SELECT name,endtime,newstat FROM profile WHERE parent='i639x1384613263'
+Unknown column 'name' in 'field list'
+2013-11-17 14:51:34
+SELECT name,endtime,newstat FROM profile WHERE parent='ftriu532smqd81n'
+Unknown column 'name' in 'field list'
+2013-11-17 14:51:53
+SELECT name,endtime,newstat FROM profile WHERE parent='ftriu532smqd81n'
+Unknown column 'name' in 'field list'
+2013-11-17 14:52:00
+SELECT name,endtime,newstat FROM profile WHERE parent='09wg5brkidyljtp'
+Unknown column 'name' in 'field list'
+2013-11-17 14:52:08
+SELECT name,endtime,newstat FROM profile WHERE parent='ftriu532smqd81n'
+Unknown column 'name' in 'field list'
+2013-11-17 14:52:16
+SELECT name,endtime,newstat FROM profile WHERE parent='09wg5brkidyljtp'
+Unknown column 'name' in 'field list'
+2013-11-17 14:52:18
+SELECT name,endtime,newstat FROM profile WHERE parent='09wg5brkidyljtp'
+Unknown column 'name' in 'field list'
+2013-11-17 14:52:23
+SELECT name,endtime,newstat FROM profile WHERE parent='ftriu532smqd81n'
+Unknown column 'name' in 'field list'
+2013-11-17 14:52:28
+SELECT name,endtime,newstat FROM profile WHERE parent='ftriu532smqd81n'
+Unknown column 'name' in 'field list'
+2013-11-17 15:05:57
+SELECT name,endtime,newstat FROM profile WHERE parent='ftriu532smqd81n'
+Unknown column 'name' in 'field list'
+2013-11-17 15:05:59
+SELECT name,endtime,newstat FROM profile WHERE parent='ftriu532smqd81n'
+Unknown column 'name' in 'field list'
+2013-11-17 15:06:01
+SELECT name,endtime,newstat FROM profile WHERE parent='09wg5brkidyljtp'
+Unknown column 'name' in 'field list'
+2013-11-17 15:06:04
+SELECT name,endtime,newstat FROM profile WHERE parent='q5supc0lytiv4x9'
+Unknown column 'name' in 'field list'
+2013-11-17 21:51:32
+insert into proword (id,name,starttime,lasttime,parent,content) values (NULL,'123123','1384696292','0','dsfasfdas','1232412341234')
+Unknown column 'starttime' in 'field list'
+2013-11-17 21:51:38
+insert into proword (id,name,starttime,lasttime,parent,content) values (NULL,'123123','1384696298','0','dsfasfdas','1232412341234')
+Unknown column 'starttime' in 'field list'
+2013-11-17 21:51:55
+insert into proword (id,name,starttime,lasttime,parent,content) values (NULL,'123123','1384696315','0','dsfasfdas','1232412341234')
+Unknown column 'starttime' in 'field list'
+2013-11-17 22:06:19
+SELECT name,lasttime,content FROM proword WHERE parent='ftriu532smqd81n'
+Unknown column 'lasttime' in 'field list'
+2013-11-17 22:06:32
+SELECT name,lasttime,content FROM proword WHERE parent='ftriu532smqd81n'
+Unknown column 'lasttime' in 'field list'
+2013-11-17 22:07:27
+SELECT name,lasttime,content FROM proword WHERE parent='ftriu532smqd81n'
+Unknown column 'lasttime' in 'field list'
+2013-11-17 22:07:46
+SELECT name,lasttime,content FROM proword WHERE parent='ftriu532smqd81n'
+Unknown column 'lasttime' in 'field list'
+2013-11-17 22:08:10
+SELECT name,ctime,content FROM proword WHERE parent='ftriu532smqd81n'
+Unknown column 'ctime' in 'field list'
+2013-11-17 22:08:19
+SELECT name,ctime,content FROM proword WHERE parent='ftriu532smqd81n'
+Unknown column 'ctime' in 'field list'

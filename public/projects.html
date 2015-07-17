@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8" />
+	<title><?php echo $user['name'] ?></title>
+	<link href="public/style/style.css" rel="stylesheet"/>
+	<link href="public/style/projects.css" rel="stylesheet"/>
+	<script type="text/javascript" src='public/script/jquery.min.js'></script>
+	<script type="text/javascript" src="public/script/ajaxfileupload.js"></script>
+	<script type="text/javascript" src='public/script/acssc.js'></script>
+	<script type="text/javascript" src='public/script/projects.js'></script>
+
+	<script type="text/javascript" src='public/script/jquery.fancybox.js'></script>
+	<link rel="stylesheet" type="text/css" href="public/script/jquery.fancybox.css"/>
+
+</head>
+<body>
+	<div id='body'>
+
+		<div id='header'>
+			<ul>
+				<li class='first'><img src='public/images/logo.png' /></li>
+				<li><a id="vist" href="index.php">项目</a></li>
+				<li><a href="progress.php">回顾</a></li>
+				<li><a href="calendars.php">日历</a></li>
+				<li><a href="stats.php">统计</a></li>
+			</ul>
+			<div id='user'>
+				<a href="me.php"><img src="<?php echo $user['headimg'] ?>" title="<?php echo $user['name'] ?>" /></a>
+			</div>
+			<div class="search">
+				<span></span>
+				<input id='sea' type='text'/>
+			</div>
+		</div>
+
+		<div id="sonpage">
+			<div id="objtitle">
+				<h3><?php echo $info['self']; ?></h3>					
+				<ul>
+					<li class="set"><a href="newjob.php?<?php echo $id; ?>">设置</a></li>
+					<li class="stat"><a href="">统计</a></li>
+				</ul>
+			</div>
+			<div id="bigdiv">
+				<div class="list">
+					<div class='listtitle'>
+						<h4>任务</h4>
+						<input type="button" value="添加新任务" onclick="newtask()" />
+					</div>
+					<div class="listshow">
+						<div id="newtasks" class="hide">
+							<span>任务名</span><input type="text" class="text" name="name" id="ordername"/>
+							<input type="button" value="创建" class="sub" onclick="createorder()" />
+							<a onclick="newtask()">取消</a><font id="mess"></font>
+						</div>
+						<?php
+							if(!$info['order']){
+								echo "<h6>现在还没有建立过任务</h6>";
+							}else{
+								foreach ($info['order'] as $value) {
+									echo "<div class='line'><a href='tasks.php?{$id}&{$value['id']}'>{$value['name']}</a>";
+									if($value['newstat']>0){
+										echo "<input class='glay' type='button' value='{$value['newstat']}条更新'' />";
+									}
+									if(abs(time()-$value['endtime'])<259200){
+										echo "<input type='button' class='red' value='".date("Y/m/d",$value['endtime'])."' />";
+									}
+									echo "</div>";
+								}
+							}
+						?>
+					</div
+				</div>
+
+				<div class="list">
+					<div class='listtitle'>
+						<h4>文档</h4>
+						<a href="newdoc.php?<?php echo $id; ?>"><input type="button" value="创建新文档" /></a>
+					</div>
+					<div class="listshow">
+
+					<?php
+					if(!$info['word']) {
+						echo "<h6>现在还没有撰写过文档</h6>";
+					}else{
+						foreach($info['word'] as $value){
+					
+							echo "<div class='article'>
+								<div class='title'>{$value['name']}</div>
+								<div class='conte'>".
+									htmlspecialchars_decode($value['content'],ENT_NOQUOTES)
+								."</div>
+								<div class='date'>".date("m月d日",$value['ctime'])."</div>
+							</div>";
+
+						}
+					}
+					?>
+
+					</div>
+				</div>
+
+				<div class="list">
+					<div class='listtitle'>
+						<h4>文件</h4>
+						<input type="button" value="上传新文件" />
+						<form name="form" action="" method="POST" enctype="multipart/form-data">
+							<input type="file" id="uploadfile" name="uploadfile" onchange="sendfile($(this))" />
+						</form>
+					</div>
+					<div class="listshow">
+						<div class="img" id="listshowimg">
+						<?php
+							if(!$file) {
+								echo "<h6>现在还没有上传过文件</h6>";
+							}else{
+								foreach($file as $value){
+									$value['url'] = "data/images/".$value['url'];
+									echo "<a class='li fancybox-effects-d' href='{$value['url']}'><img src='{$value['url']}' /></a>";
+								}
+							}
+						?>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>	
+
+	</div>
+</body>
+</html>

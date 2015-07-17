@@ -1,0 +1,75 @@
+2013-10-27 21:19:29
+:3306 :
+Access denied for user ''@'localhost' (using password: NO)
+2013-10-27 21:19:29
+set names UTF8
+Access denied for user ''@'localhost' (using password: NO)
+2013-10-27 21:19:29
+SELECT * FROM users WHERE mail = 
+Access denied for user ''@'localhost' (using password: NO)
+2013-10-27 21:22:23
+:3306 :
+Access denied for user ''@'localhost' (using password: NO)
+2013-10-27 21:22:23
+set names UTF8
+Access denied for user ''@'localhost' (using password: NO)
+2013-10-27 21:22:23
+SELECT * FROM users WHERE mail = 
+Access denied for user ''@'localhost' (using password: NO)
+2013-10-27 21:22:58
+:3306 :
+Access denied for user ''@'localhost' (using password: NO)
+2013-10-27 21:22:58
+set names UTF8
+Access denied for user ''@'localhost' (using password: NO)
+2013-10-27 21:22:58
+SELECT * FROM users WHERE mail = 
+Access denied for user ''@'localhost' (using password: NO)
+2013-10-27 21:29:31
+:3306 :
+Access denied for user ''@'localhost' (using password: NO)
+2013-10-27 21:29:31
+set names UTF8
+Access denied for user ''@'localhost' (using password: NO)
+2013-10-27 21:29:31
+SELECT * FROM users WHERE mail = 
+Access denied for user ''@'localhost' (using password: NO)
+2013-10-27 21:34:10
+SELECT * FROM users WHERE mail = 
+You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 1
+2013-10-27 21:34:17
+SELECT * FROM users WHERE mail = 
+You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 1
+2013-10-27 21:34:18
+SELECT * FROM users WHERE mail = 
+You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 1
+2013-10-27 21:34:19
+SELECT * FROM users WHERE mail = 
+You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 1
+2013-10-27 21:36:32
+SELECT * FROM users WHERE mail = 
+You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 1
+2013-10-27 21:36:33
+SELECT * FROM users WHERE mail = 
+You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 1
+2013-10-27 21:36:55
+SELECT * FROM users WHERE mail = 
+You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 1
+2013-10-27 21:37:05
+SELECT * FROM users WHERE mail = 
+You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 1
+2013-10-27 21:43:24
+:3306 :
+Access denied for user ''@'localhost' (using password: NO)
+2013-10-27 21:43:24
+set names UTF8
+Access denied for user ''@'localhost' (using password: NO)
+2013-10-27 21:43:24
+SELECT * FROM users WHERE mail = 
+Access denied for user ''@'localhost' (using password: NO)
+2013-10-27 21:43:52
+SELECT * FROM users WHERE mail = 
+You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 1
+2013-10-27 21:45:57
+SELECT * FROM users WHERE mail = 
+You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 1

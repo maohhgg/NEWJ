@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8" />
+	<title><?php echo $user['name'] ?> 的所有项目</title>
+	<link href="public/style/style.css" rel="stylesheet"/>
+	<link href="public/style/color.css" rel="stylesheet"/>
+	<link href="public/style/project.css" rel="stylesheet"/>
+	<script type="text/javascript" src='public/script/jquery.min.js'></script>
+	<script type="text/javascript" src='public/script/acssc.js'></script>
+</head>
+<body>
+	<div id='body'>
+
+		<div id='header'>
+			<ul>
+				<li class='first'><img src='public/images/logo.png' /></li>
+				<li><a id="vist" href="index.php">项目</a></li>
+				<li><a href="progress.php">回顾</a></li>
+				<li><a href="calendars.php">日历</a></li>
+				<li><a href="stats.php">统计</a></li>
+			</ul>
+			<div id='user'>
+				<a href="me.php"><img src="<?php echo $user['headimg'] ?>" title="<?php echo $user['name'] ?>" /></a>
+			</div>
+			<div class="search">
+				<span></span>
+				<input id='sea' type='text'/>
+			</div>
+		</div>
+
+		<div id='sonpage'>
+			<div id='title'>
+				<p>Hi <?php echo $user['name'] ?>，这是你的项目<p>
+			</div>
+			<div id='all-project'>
+					<?php
+						if($objinfo){
+							$value = array();
+							foreach ($objinfo as &$value) {
+
+								echo "<a href='projects.php?{$value['url']}'><div class='project'>
+									<div class='showobj {$value['color']}' title='{$value['name']}'>
+										<span>{$value['mark']}</span>
+									</div>
+									<h4>
+										<a href='' title=''>{$value['name']}</a>
+									</h4>
+									<div id='setback'></div>
+								</div><a>";
+							}
+						}
+					?>
+				<div class='project'>
+					<a href="newjob.php"><div class='newobj' title="创建新项目"></div></a>
+				</div>
+			</div>
+		</div>
+
+	</div>
+</body>
+</html>

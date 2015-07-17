@@ -1,0 +1,115 @@
+#center{
+	width: 350px;
+	margin:180px auto 0px auto; 
+}
+#center .tile,.secc{
+	margin: 20px 0px;
+	width: 100%;
+	text-align: center;
+	color: #83A099;
+	font-weight: 800;
+	font-size: 35px;
+	text-shadow: 1px 1px 0 #E4F1FF;
+}
+.secc{
+	display: none;
+}
+#center .one{
+	display: block;
+	border-radius: 5px;
+	margin: 15px auto 20px auto;
+	border:1px solid #ccc;
+	width: 300px;
+	height: 30px;
+	font-size: 15px;
+	padding: 8px 10px;
+	outline: none;
+	color: #555;
+	background: #f6f6f6;
+	font-weight: 600;
+	font-family:"microsoft yahei";
+}
+#center .one:focus{
+	border: 1px solid #bbb;
+	background: #fff;
+	-webkit-box-shadow: 0 0 6px rgba(159,194,91,0.5);
+	-moz-box-shadow: 0 0 6px rgba(159,194,91,0.5);
+	-ms-box-shadow: 0 0 6px rgba(159,194,91,0.5);
+	-o-box-shadow: 0 0 6px rgba(159,194,91,0.5);
+	box-shadow: 0 0 6px rgba(159,194,91,0.5);
+}
+#center .two{
+	font-family:"microsoft yahei";
+	text-shadow: 0px -1px #888;
+	display: block;
+	width: 322px; 
+	font-size: 19px;
+	padding: 8px;
+	font-weight: 500;
+	color: #fff;
+	margin: 0px auto; 
+	border-radius: 5px;
+	border: 1px solid #95B93D;
+	outline: none;
+	background-color: #95B93D;
+	cursor: pointer;
+}
+#center .two:focus,
+#center .two:hover{
+	background-color: #9FC25B;
+}
+#center .there{
+	display: block;
+	float: left;
+	margin: 10px 0px 0px 15px;
+}
+#center span{
+	float: left;
+	color: #9a9a9a;
+	font-size: 13px;
+	display: block;
+	margin-top: 7px;
+}
+#center a{
+	font-size: 14px;
+	display: block;
+	float: right;
+	color: #9a9a9a;
+	text-decoration: none;
+	margin:7px 15px;
+}
+#center a:hover{
+	color: #8ABCD7;
+}
+p{
+	display: none;
+	text-align: center;
+	line-height: 40px;
+	margin: 20px auto 0px auto;
+	height: 40px;
+	width: 320px;
+	font-size: 15px;
+	border-radius: 5px;
+}
+#mess{
+	margin-top: 40px;
+	color: #DA5F5F;
+	background-color: #F3E1DD;
+	border: 1px solid #F4786F;
+}
+#secc{
+	color: #657;
+	background-color: #EBF8A4;
+	border: 1px solid #A2D246;
+}
+#sonpage{
+	margin: 30px 0px 40px 0px;
+	width: 980px;
+	padding: 10px;
+	height: 610px;
+	background-color: #fff;
+	border-radius: 1px;
+	-webkit-box-shadow: 0 0 5px rgba(0,0,0,0.25);
+	-moz-box-shadow: 0 0 5px rgba(0,0,0,0.25);
+	box-shadow: 0 0 5px rgba(0,0,0,0.25);
+}

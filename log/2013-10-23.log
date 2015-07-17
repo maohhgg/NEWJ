@@ -1,0 +1,3 @@
+2013-10-23 14:41:34
+SEdLECT * FROM `users` WHERE 1 limit 0,30
+You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'SEdLECT * FROM `users` WHERE 1 limit 0,30' at line 1

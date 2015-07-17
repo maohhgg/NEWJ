@@ -1,0 +1,22 @@
+2014-02-26 10:21:21
+localhost:3306 root:
+由于目标计算机积极拒绝，无法连接。
+
+2014-02-26 10:21:23
+set names UTF8
+由于目标计算机积极拒绝，无法连接。
+
+2014-02-26 10:21:25
+use tower
+由于目标计算机积极拒绝，无法连接。
+
+2014-02-26 10:21:27
+localhost:3306 root:
+由于目标计算机积极拒绝，无法连接。
+
+2014-02-26 10:21:28
+set names UTF8
+Access denied for user ''@'localhost' (using password: NO)
+2014-02-26 10:21:28
+use tower
+Access denied for user ''@'localhost' (using password: NO)

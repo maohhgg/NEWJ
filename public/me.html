@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8" />
+	<title><?php echo $user['name'] ?></title>
+	<link href="public/style/style.css" rel="stylesheet"/>
+	<link href="public/style/me.css" rel="stylesheet"/>
+	<script type="text/javascript" src='public/script/jquery.min.js'></script>
+	<script type="text/javascript" src="public/script/ajaxfileupload.js"></script>
+	<script type="text/javascript" src='public/script/acssc.js'></script>
+	<script type="text/javascript" src='public/script/me.js'></script>
+</head>
+<body>
+	<div id='body'>
+
+		<div id='header'>
+			<ul>
+				<li class='first'><img src='public/images/logo.png' /></li>
+				<li><a id="vist" href="index.php">项目</a></li>
+				<li><a href="progress.php">回顾</a></li>
+				<li><a href="calendars.php">日历</a></li>
+				<li><a href="stats.php">统计</a></li>
+			</ul>
+			<div class="search">
+				<span></span>
+				<input id='sea' type='text'/>
+			</div>
+		</div>
+
+		<div id="sonpage">
+			<div id="mtitle">
+				<img src="<?php echo $user['headimg'] ?>" id="mtitleimg"/>
+				<div id="showme">
+					<h2><?php echo $user['name'] ?></h2>
+					<p><?php echo $user['email'] ?></p>
+				</div>
+			</div>
+			<div id="set">
+				<h3>个人设置</h3>
+				<div class="listh">
+					<form name="form" action="" method="POST" enctype="multipart/form-data">
+						<input type="file" id="uploadfile" name="uploadfile" onchange="upchangeimg($(this))" />
+					</form>
+					<a>选择新头像</a>
+					<p>你可以选择png/jpg图片作为头像</p>
+				</div>
+				<div class="listh">
+					<span>名字</span><input type="text" class="text" value="<?php echo $user['name'] ?>" name="name" id="name"/>
+				</div>
+				<div class="listh">
+					<span>密码</span><a onclick="hideshow();">修改密码</a>
+				</div>
+				<div id="hide">
+					<span>新密码</span><input type="password" class="text" name="password" id="password" /><br/><br/>
+					<span>确认</span><input type="password" class="text" onblur="test($(this));" />
+				</div>
+				<input type="button" value="保存" class="sub" onclick="upselfdate()" />
+				<p id='showmetherecall'></p>
+			</div>
+		</div>	
+
+	</div>
+</body>
+</html>

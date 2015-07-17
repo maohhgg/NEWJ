@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8" />
+	<title>回顾</title>
+	<link href="public/style/style.css" rel="stylesheet" type="text/css"/>
+	<link rel="stylesheet" type="text/css" href="public/style/progress.css">
+	<script type="text/javascript" src='public/script/jquery.min.js'></script>
+	<script type="text/javascript" src='public/script/acssc.js'></script>
+</head>
+<body>
+	<div id='body'>
+
+		<div id='header'>
+			<ul>
+				<li class='first'><img src='public/images/logo.png' /></li>
+				<li><a id="vist" href="index.php">项目</a></li>
+				<li><a href="progress.php">回顾</a></li>
+				<li><a href="calendars.php">日历</a></li>
+				<li><a href="stats.php">统计</a></li>
+			</ul>
+			<div id='user'>
+				<a href="me.php"><img src="<?php echo $userinfo['headimg'] ?>" title="<?php echo $userinfo['name'] ?>" /></a>
+			</div>
+			<div class="search">
+				<span></span>
+				<input id='sea' type='text'/>
+			</div>
+		</div>
+
+		<div id="sonpage">
+
+			<div id='title'>
+				<p>光阴像箭，一直向前<p>
+			</div>
+
+			
+<?php
+		$i = 0;
+		foreach ($userarr as $value) {
+			$bigtime = array_keys($userarr)[$i];
+			$i++;
+			echo "<div class='statubar'>
+					<div class='biground'>
+						<div class='litrround'>
+							<h3>".date("d",$bigtime)."</h3>
+							<p>".date("Y-m",$bigtime)."</p>
+						</div>
+					</div>
+					<div class='beeline'><hr size='2' color='#D2E8EA' /></div>
+					
+					<div class='history'>";
+
+				foreach ($value as $values) {
+					echo "<div class='listcote'>
+							<span>".date("H:i",$values[0])."</span>
+							<img src='{$userinfo['headimg']}'/>
+							<b><a href='me.php'>{$userinfo['name']}</a></b>";
+					switch($values['type']){
+						case '创建':
+							echo "<span>创建了项目：</span>
+								<a href='projects.php?{$values[2]}'>{$values[1]}</a>
+							</div>";
+							break;
+						
+						case '注册':
+							echo "<span>加入了我们。</span>
+							</div>";
+							break;
+						case '登录':
+							echo "<span>登录了。</span>
+							</div>";
+							break;
+					}
+					
+				}
+
+			echo "</div></div>";
+		}
+
+?>
+
+			<div id='end'>
+				没有了哦<a>返回</a>吗?
+			</div>
+		</div>
+
+
+
+	</div>
+</body>
+</html>

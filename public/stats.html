@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8" />
+	<title>统计</title>
+	<link href="public/style/style.css" rel="stylesheet"/>
+	<link href="public/style/status.css" rel="stylesheet"/>
+	<script type="text/javascript" src='public/script/jquery.min.js'></script>
+	<script type="text/javascript" src='public/script/acssc.js'></script>
+</head>
+<body>
+	<div id='body'>
+
+		<div id='header'>
+			<ul>
+				<li class='first'><img src='public/images/logo.png' /></li>
+				<li><a id="vist" href="index.php">项目</a></li>
+				<li><a href="progress.php">回顾</a></li>
+				<li><a href="calendars.php">日历</a></li>
+				<li><a href="stats.php">统计</a></li>
+			</ul>
+			<div id='user'>
+				<a href="me.php"><img src="<?php echo $userinfo['headimg'] ?>" title="<?php echo $userinfo['name'] ?>" /></a>
+			</div>
+			<div class="search">
+				<span></span>
+				<input id='sea' type='text'/>
+			</div>
+		</div>
+
+		<div id="sonpage">
+			<div id="stitle">
+				<h3><?php echo $userinfo['name'] ?> 的统计</h3> <p>截止 <?php echo date("Y年m月d日"); ?></p>
+			</div>
+			<ul class="status">
+				<li>
+					<p>总任务数</p>
+					<h2><?php echo $obj['obj']; ?></h2>
+				</li>
+				<li>
+					<p>总更新数</p>
+					<h2><?php echo $obj['update']; ?></h2>
+				</li>
+				<li class="lost">
+					<p>完成率</p>
+					<h2 class="red"><?php echo $obj['over']; ?>%</h2>
+				</li>
+			</ul>
+			<ul class='viewpro'>
+				<li>项目</li>
+				<li>更新</li>
+				<li>完成</li>
+			</ul>
+			<ul class="really">
+			<?php
+			foreach ($num as $value){
+				echo "<li><a href='projects.php?{$value['url']}'>{$value['name']}</a></li>
+				<li><h2>{$value['num']}</h2></li><li><h2 class='red'>";
+				if($value['itsover']==0){
+					echo "否";
+				}else{
+					echo "是";
+				}
+				echo"</h2></li>";
+			}
+			?>
+			</ul>
+		</div>
+		
+
+	</div>
+</body>
+</html>

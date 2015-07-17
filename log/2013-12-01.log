@@ -1,0 +1,15 @@
+2013-12-01 22:07:05
+select lasttime,email from users where email='maohhgg@gmail.com'
+Unknown column 'lasttime' in 'field list'
+2013-12-01 22:07:25
+select lasttime,email from users where email='maohhgg@gmail.com'
+Unknown column 'lasttime' in 'field list'
+2013-12-01 22:34:50
+SELECT mktime,name FROM project WHERE email='maohhgg@gmail.com'
+Unknown column 'email' in 'where clause'
+2013-12-01 22:35:15
+SELECT mktime,name FROM project WHERE email='maohhgg@gmail.com'
+Unknown column 'email' in 'where clause'
+2013-12-01 22:35:17
+SELECT mktime,name FROM project WHERE email='maohhgg@gmail.com'
+Unknown column 'email' in 'where clause'

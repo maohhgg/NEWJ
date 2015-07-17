@@ -1,0 +1,141 @@
+#sonpage{
+	margin: 30px 0px 40px 0px;
+	width: 1000px;
+	background-color: #fff;
+	border-radius: 1px;
+	-webkit-box-shadow: 0 0 5px rgba(0,0,0,0.25);
+	-moz-box-shadow: 0 0 5px rgba(0,0,0,0.25);
+	box-shadow: 0 0 5px rgba(0,0,0,0.25);
+}
+#sonpage #mtitle{
+	background-color: #F6F6F6;
+	border-bottom: 1px solid #dfdfdf;
+	height: 130px;
+}
+#mtitle img{
+	margin: 15px 10px 0px 30px;
+	float: left;
+	height: 100px;
+	width: 100px;
+	border-radius: 50px;
+	-webkit-box-shadow: 0 2px 4px rgba(0,0,0,0.3);
+	-moz-box-shadow: 0 2px 4px rgba(0,0,0,0.3);
+	box-shadow: 0 2px 4px rgba(0,0,0,0.3);
+}
+#mtitle #showme{
+	float: left;
+}
+#showme h2{
+	margin:44px 0px 0px 0px;
+	line-height: 25px;
+	color: #333;
+	font-weight: 500;
+}
+#showme p{
+	margin:0px; 
+	font-size: 14px;
+	color: #9a9a9a;
+}
+#set{
+	padding: 30px 70px;
+}
+#set h3{
+	position: relative;
+	top: 0px;
+	left: -30px;
+	color: #769BB7;
+	margin: 0px 0px 20px 0px;
+	padding: 0px;
+}
+#set .listh{
+	margin: 20px 0px 0px 0px;
+	height: 45px;
+}
+#set span{
+	display: block;
+	text-align: right;
+	float: left;
+	color: #444;
+	width: 50px;
+	font-size: 15px;
+	margin: 0px 10px 0px 10px;
+	color: #666;
+}
+#set .listh p{
+	margin: 0px;
+	color: #bbb;
+	font-size: 10px;
+}
+#set input.text{
+	margin-top: -10px;
+	font-size: 15px;
+	border-radius: 4px;
+	height: 24px;
+	color: #aaa;
+	border: 1px solid #dfdfdf; 
+	outline: none;
+	padding: 4px 10px;
+}
+#uploadfile{
+	height: 20px;
+	width: 75px;
+    overflow: hidden;
+    font-size: 300px;
+    cursor:pointer;
+    position: absolute;
+    filter:alpha(opacity=0);
+    -webkit-opacity:0;
+	-moz-opacity:0;
+	-o-opacity:0;
+	opacity:0;
+}
+#set .listh a,.file{
+	height: 20px;
+	color: #3388bb;
+	font-size: 15px;
+	text-decoration: none;
+}
+#hide{
+	display: none;
+}
+input.sub{
+	margin-top:30px; 
+	padding: 5px 15px;
+	font-size: 15px;
+	font-weight: 600;
+	border: 1px solid #dfdfdf;
+	border-radius: 3px;
+	outline: none;
+	background-color: #fff;
+	cursor: pointer;
+	color: #84A099;
+}
+input.sub:hover{
+	background-color: #f2f2f2;
+}
+#set input.text:focus{
+	background: #fefefe;
+	border: 1px solid #bbb;
+	color: #666;
+	-webkit-box-shadow: 0 0 6px rgba(32,150,158,0.4);
+	-moz-box-shadow: 0 0 6px rgba(32,150,158,0.4);
+	-ms-box-shadow: 0 0 6px rgba(32,150,158,0.4);
+	-o-box-shadow: 0 0 6px rgba(32,150,158,0.4);
+	box-shadow: 0 0 6px rgba(32,150,158,0.4);
+}
+#showmetherecall{
+	display: block;
+	color: #83A098;
+	font-size: 15px;
+}
+#showmetherecall a{
+	display: block;
+	margin-top: -11px;
+	float: left;
+	font-family:towericon; 
+	color: red;
+	font-size: 30px;
+}
+#showmetherecall a.b{
+	color: green;
+}

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8" />
+	<title><?php echo $user['name'] ?></title>
+	<link href="public/style/style.css" rel="stylesheet"/>
+	<link href="public/style/newjob.css" rel="stylesheet"/>
+	<link href="public/style/color.css" rel="stylesheet"/>
+	<script type="text/javascript" src='public/script/jquery.min.js'></script>
+	<script type="text/javascript" src='public/script/newjob.js'></script>
+</head>
+<body>
+	<div id='body'>
+
+		<div id='header'>
+			<ul>
+				<li class='first'><img src='public/images/logo.png' /></li>
+				<li><a id="vist" href="index.php">项目</a></li>
+				<li><a href="progress.php">回顾</a></li>
+				<li><a href="calendars.php">日历</a></li>
+				<li><a href="stats.php">统计</a></li>
+			</ul>
+			<div id='user' class="<?php echo $user['email'] ?>">
+				<a href="me.php"><img src="<?php echo $user['headimg'] ?>" title="<?php echo $user['name'] ?>" /></a>
+			</div>
+			<div class="search">
+				<span></span>
+				<input id='sea' type='text' value="" />
+			</div>
+		</div>
+
+		<div id="sonpage">
+			<div id="mtitle">
+				<h3>创建新项目</h3>
+			</div>
+			<div id="wordmess">		
+				<span>名称</span><input class="one" type="text" name="name" value="<?php echo $info['name'] ?>" />
+			</div>
+			<div id="set">
+				<div id="word">
+					<h4>点击下列的按钮，完成图标的配色</h4>
+					<p>用于在首页个性的展示你项目，你可以在项目设置里面轻松的更改。</p>
+				</div>
+				<ul id="mark" class="<?php echo $info['color'] ?>" mark="<?php echo $info['mark'] ?>">
+					<li>A</li><li>B</li><li>C</li><li>D</li><li>E</li><li>F</li>
+					<li>G</li><li>H</li><li>I</li><li>J</li><li>K</li><li>L</li>
+					<li>M</li><li>N</li><li>O</li><li>P</li><li>Q</li><li>R</li>
+					<li>S</li><li>T</li><li>U</li><li>V</li><li>W</li><li>X</li><li>Y</li>
+				</ul>
+				<ul id="color">
+					<li class="D6DDE9"></li><li class="CFE6E9"></li><li class="DBEEE6"></li><li class="E3E3E3"></li><li class="ECE8D5"></li>
+					<li class="E4EDD1"></li><li class="F0DCE3"></li><li class="E9DDCF"></li>
+				</ul>
+			</div>
+			<input class="sub" type="button" value="<?php if(isset($id)){echo '修改';}else{echo '创建';}?>" id="submit" onclick="create();"/>
+			<?php 
+			if(isset($id)){
+				echo 	"<input class='sub' type='button' value='删除' id='delete' onclick='delete();'/>";
+			}
+			?>
+			<p id='showmetherecall'></p>
+		</div>	
+
+	</div>
+</body>
+</html>
